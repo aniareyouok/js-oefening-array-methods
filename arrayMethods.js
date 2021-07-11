@@ -80,7 +80,10 @@ console.log(listFromOldToYoung);
 // { first: 'Ada', last: 'Lovelace', year: 1815, passed: 1852 }
 // ]
 
-
+const longestLived = inventors.sort((a, b) => {
+  return (b.passed-b.year)-(a.passed-a.year);
+});
+console.log(longestLived);
 
 
 // 6. Vind de gegevens over de uitvinder wiens achternaam 'Edison' is.
